@@ -1,85 +1,91 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <link href="css/style.css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+    <head>
+    	<meta charset="utf-8">
+    	<link href="css/style.css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    	<title>HTML Academy: Седона</title>
+  	</head>
+    <body>
 		<header class="page-header">
 				<nav class="main-menu">
   					<div class="logo">
   						<img src="img/logo.png" alt="Логотип сайта">
   					</div>
   					<ul class="main-nav">
-  						<li><a href="#">ИНФОРМАЦИЯ</a></li>
-  						<li><a href="#">ФОТО И ВИДЕО</a></li>
-  						<li><a href="#">КАРТА ШТАТА</a></li>
-  						<li><a href="#">ГОСТИНИЦЫ</a></li>
+  						<li><a href="#">Иинформация</a></li>
+  						<li><a href="#">Фото и видео</a></li>
+  						<li><a href="#">Карта штата</a></li>
+  						<li><a href="#">Гостиницы</a></li>
   					</ul>
   				</nav>
   		</header>
   		<main class="container">
-  			<h1 class="hidden-visuality">Sedona city</h1>
+  			<h1 class="visuality-hidden">Sedona city</h1>
   			<section class="promo">
-  				<img src="http://placehold.it/150x100" alt="Фоновое фото">
-  				<p><b>Седона - небольшой городок в Аризоне,<br>
-  				заслуживающий большего!</b></p>
-  				<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон</p>
+  				<div class="promo-block">
+  					<img src="http://placehold.it/150x100" alt="Sedona">
+  				</div>
+  				<div class="promo-block">
+  					<h1 class="promo-title">Седона - небольшой городок в Аризоне,<br>
+  					 						заслуживающий большего!</h1>
+  					<p class="promo-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон</p>
+  				</div>
   			</section>
   			<section class="features">
-  				<div class="reason">
-  					<h3>Настоящий городок</h3>
-  					<span class="number-1-png">- №1 -</span>
-  					<p>Седона - не атракцирн для туристов,<br>
-  					там течет своя жизнь</p>
-  					<img src="http://placehold.it/150x100" alt="Вид на город">
-  				</div>
+  				<article class="reason">
+  					<div class="reason-about">
+  						<h2 class="reason-title">Настоящий городок</h2>
+  						<span class="reason-number">- &#8470; 1 -</span>
+  						<p class="reason-text">Седона - не атракцион для туристов, там течет своя жизнь</p>
+  					</div>
+  					<div class="reason-picture">
+  						<img src="http://placehold.it/150x100" alt="Sedona">
+  					</div>
+  				</article>
   				<div class="offers">
-  					<ul class="offers-item>
+  					<ul class="offers-item">
+  						<li>
+  							<h2 class="offers-title">Жилье</h2>
   							<img src="#" alt="пинтограмма дома">
-  							<h3>Жилье</h3>
-  							<p>Рекомендуем пожить в настоящем мотеле,<br>
-  						 	все как в кино!</p>
-  						</>
+  							<p class="offers-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+  						</li>
+  						<li>
+  							<h2 class="offers-title">Еда</h2>
   							<img src="#" alt="пинтограмма еды">
-  							<h3>Еда</h3>
-  							<p>Всегда заказывайте фирменный бургер,<br>
-  							 вы не разочаруетесь!</p>
-  						</>
+  							<p class="offers-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+  						</li>
+  						<li>
+  							<h2 class="offers-title">Сувениры</h2>
   							<img src="#" alt="пинтограмма подарка">
-  							<h3>Сувениры</h3>
-  							<p>Не только китайского, но и местного<br>
-  							 производства!</p>
+  							<p class="offers-text">Не только китайского, но и местного производства!</p>
   						</li>
   					</ul>
   				</div>
-  				<div class="reason">
-  					<h3>Там есть мост дьявола</h3>
-  					<span class="number-2-png">- №2 -</span>
-  					<p>Да, по нему можно пройти! Если конечно<br>
-  					вы осмелитесь</p>
-  					<img src="http://placehold.it/150x100" alt="Вид на каньон">
-  				</div>
-  				<div class="reason-secondary">
+  				<article class="reason">
+  					<div class="reason-about">
+  						<h2 class="reason-title">Там есть мост дьявола</h2>
+  						<span class="reason-number">- &#8470; 2 -</span>
+  						<p class="reason-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+  					</div>
+  					<div class="reason-picture">
+  						<img src="http://placehold.it/150x100" alt="Вид на каньон">
+  					</div>
+  				</article>
+  				<div class="reason reason-secondary">
   					<ul class="reason-secondary-items">
-  						<li>
-  							<h3>Небольшая площадь</h3>
-  							<span class="number-3-png">- №3 -</span>
-  							<p>Все достопримечательности<br>
-  							находятся очень близко</p>
+  						<li class="reason-secondary-features">
+  							<h3 class="reason-secondary-title">Небольшая площадь</h3>
+  							<span class="reason-secondary-number">- &#8470; 3 -</span>
+  							<p class="reason-secondary-text">Все достопримечательности находятся очень близко</p>
+  						<li class="reason-secondary-features">
+  							<h3 class="reason-secondary-title">Красивая дорога</h3>
+  							<span class="reason-secondary-number">- &#8470; 4 -</span>
+  							<p class="reason-secondary-text">Ехать в седону из Лас-Вегаса совсем не скучно</p>
   						</li>
-  						<li>
-  							<h3>Красивая дорога</h3>
-  							<span class="number-4-png">- №4 -</span>
-  							<p>Ехать в седону из Лас-Вегаса совсем<br>
-  						 	не скучно</p>
-  						</li>
-  						<li>
-  							<h3>Мало туристов</h3>
-  							<span class="number-5-png">- №5 -</span>
-  							<p>Большенство едет в Гранд каньон и<br>
-  						 	толпится там</p>
+  						<li class="reason-secondary-features">
+  							<h3 class="reason-secondary-title">Мало туристов</h3>
+  							<span class="reason-secondary-number">- &#8470; 5 -</span>
+  							<p class="reason-secondary-text">Большенство едет в Гранд каньон и толпится там</p>
   						</li>
   					</ul>
   				</div>
@@ -87,8 +93,8 @@
   			<section class="appointment">
   				<p><b>Заинтерисовались?</b></p>
   				<p>Укажите предполагаемые даты поездки,<br>
-  				и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-  				<h2><a href="#">Поиск гостиниц в Седоне</a></h2>
+  				   и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+  				<a href="#">Поиск гостиниц в Седоне</a>
         		<form class="appointment-form" action="https://echo.htmlacademy.ru" method="get">
           			<p class="appointment-item">
             			<label for="date-enter">Дата заезда:</label>
@@ -100,11 +106,11 @@
           			</p>
           			<p class="appointment-item">
             			<label for="grown">Взрослые:</label> 
-            		<input type="text" name="NumberOfadults" id="grown"   placeholder="2">
+            		<input type="number" name="NumberOfadults" id="grown"   placeholder="2">
           			</p>
           			<p class="appointment-item">
             			<label for="children">Дети:</label> 
-            		<input type="text" name="NumberOfchildren" id="children"   placeholder="0">
+            		<input type="number" name="NumberOfchildren" id="children"   placeholder="0">
           			</p>
           	     <button class="button" type="submit">Отправить</button>
         </form>  
@@ -115,17 +121,17 @@
       		</div>
       	</section>
       	<footer class="main-footer">
-      	<p>#VISITSEDONA</p>
+      	<p>#Visitsedona</p>
         <div class="footer-social">
             <ul>
-          		<li><a class="social-button" href="#">ТВИТТЕР</a></li>
+          		<li><a class="social-button" href="#">Твиттер</a></li>
           		<li><a class="social-button" href="#">Фейсбук</a></li>
-          		<li><a class="social-button" href="#">ЮТУБ</a></li>
+          		<li><a class="social-button" href="#">Ютуб</a></li>
         	</ul>
       	</div>
       	<p class="footer-copyright">
-        <b>WEBSITE BY</b> 
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+        <b>Website by</b> 
+        <a  href="https://htmlacademy.ru">HTML Academy</a>
       	</p>
   		</footer>
     </body>
