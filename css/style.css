@@ -10,7 +10,7 @@ body {
     font-weight: normal;
 }
 
-h1 .promo-title{
+h2 .promo-title{
 	color: #333333;
     font-size: 21px;
     text-transform: uppercase;
@@ -18,7 +18,7 @@ h1 .promo-title{
     font-weight: bold;
 }
 
-h2 .reason-title{
+h3 .reason-title{
 	color: #FFFFFF;
     font-size: 21px;
     text-transform: uppercase;
@@ -26,7 +26,7 @@ h2 .reason-title{
     font-weight: bold;
 }
 
-h2 .offers-title{
+h3 .offers-title{
 	color: #333333;
     font-size: 21px;
     text-transform: uppercase;
