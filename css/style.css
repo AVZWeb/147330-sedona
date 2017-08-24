@@ -1,6 +1,5 @@
 html,
 body {
-
 	font-family: "Arial", sans-serif, "PT Sans";
     min-width: 1200px;
     color: #333333;
@@ -13,7 +12,6 @@ body {
 h2 .promo-title{
 	color: #333333;
     font-size: 21px;
-    text-transform: uppercase;
     line-height: 26px;
     font-weight: bold;
 }
@@ -21,15 +19,13 @@ h2 .promo-title{
 h3 .reason-title{
 	color: #FFFFFF;
     font-size: 21px;
-    text-transform: uppercase;
-    line-height: 21px;
+    ine-height: 21px;
     font-weight: bold;
 }
 
 h3 .offers-title{
 	color: #333333;
     font-size: 21px;
-    text-transform: uppercase;
     line-height: 21px;
     font-weight: bold;
 }
@@ -37,7 +33,6 @@ h3 .offers-title{
 h2 .info-structure-title{
 	color: #FFFFFF;
     font-size: 16px;
-    text-transform: uppercase;
     line-height: 21px;
     font-weight: bold;
 }
@@ -45,7 +40,6 @@ h2 .info-structure-title{
 h3 .results-title{
 	color: #333333;
     font-size: 12px;
-    text-transform: uppercase;
     line-height: 18px;
     font-weight: normal;
 }
@@ -53,7 +47,6 @@ h3 .results-title{
 h3 .hotel-title{
 	color: #333333;
     font-size: 21px;
-    text-transform: uppercase;
     line-height: 26px;
     font-weight: bold;
 }
