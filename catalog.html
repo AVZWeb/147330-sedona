@@ -28,21 +28,33 @@
   			<form action="https://echo.htmlacademy.ru" method="get">
   				<div class="info-structure">
   					<h2 class="info-structure-title">Инфраструктура:</h2>
-  					<input type="checkbox" name="pool" id="pool-field" value="on" checked>
-  					<label for="pool-field">Бассейн</label>
-  					<input type="checkbox" name="parking" id="parking-field" value="on">
-  					<label for="parking-field">Паркинг</label>
-  					<input type="checkbox" name="wi-fi" id="wi-fi-field" value="on">
-  					<label for="wi-fi-field">Wi-fi</label>
+            <label class="field-checkbox-item">
+  					  <input class="field-checkbox-input" type="checkbox" name="infrastructure" value="pool" checked>
+  					  <span class="field-checkbox-text">Бассейн</label>
+            </label>
+            <label class="field-checkbox-item">
+  					  <input class="field-checkbox-input" type="checkbox" name="infrastructure" value="parking">
+  					  <span class="field-checkbox-text">Паркинг</span>
+            </label>
+            <label class="field-checkbox-item">
+  					  <input class="field-checkbox-input" type="checkbox" name="infrastructure" value="wi-fi">
+  					  <span class="field-checkbox-text">Wi-fi</span>
+            </label>
   				</div>
   				<div class="type-home">
   					<h2 class="info-structure-title">Тип жилья:</h2>
-  					<input type="checkbox" name="hotel" id="hotel-field" value="on" checked>
-  					<label for="hotel-field">Гостиница</label>
-  					<input type="checkbox" name="motel" id="motel-field" value="on" checked>
-  					<label for="motel-field">Мотель</label>
-  					<input type="checkbox" name="suite" id="suite-field" value="on" checked>
-  					<label for="suite-field">Апартаменты</label>
+            <label class="field-checkbox-item">
+  					  <input class="field-checkbox-input" type="checkbox" name="Type of accommodation" value="hotel" checked>
+  					  <span class="field-checkbox-text">Гостиница</span>
+            </label>
+            <label class="field-checkbox-item">
+  					  <input class="field-checkbox-input" type="checkbox" name="Type of accommodation" value="motel" checked>
+  					  <span class="field-checkbox-text">Мотель</span>
+            </label>
+            <label class="field-checkbox-item">
+  					  <input class="field-checkbox-input" type="checkbox" name="Type of accommodation" value="suite" checked>
+  					  <span class="field-checkbox-text">Апартаменты</span>
+            </label>
   				</div>
   				<div class="price-in-day">
   					<p class="price-in-day-text">Стоимость в сутки(Р):</p>
