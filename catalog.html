@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона-каталог</title>
+    <link href="css/normilize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   </head>
@@ -25,9 +26,9 @@
   	<main class="page-main">
   		<section class="main-form">
   			<h1 class="visually-hidden">Каталог гостиниц</h1>
-  			<form action="https://echo.htmlacademy.ru" method="get">
-  				<div class="info-structure">
-  					<h2 class="info-structure-title">Инфраструктура:</h2>
+  			<form class="field-group-form" action="https://echo.htmlacademy.ru" method="get">
+  				<div class="field-group">
+  					<h2 class="field-group-title">Инфраструктура:</h2>
             <label class="field-checkbox-item">
   					  <input class="field-checkbox-input" type="checkbox" name="infrastructure" value="pool" checked>
   					  <span class="field-checkbox-text">Бассейн</span>
@@ -41,34 +42,32 @@
   					  <span class="field-checkbox-text">Wi-fi</span>
             </label>
   				</div>
-  				<div class="type-home">
-  					<h2 class="info-structure-title">Тип жилья:</h2>
+  				<div class="field-group">
+  					<h2 class="field-group-title">Тип жилья:</h2>
             <label class="field-checkbox-item">
-  					  <input class="field-checkbox-input" type="checkbox" name="Type of accommodation" value="hotel" checked>
+  					  <input class="field-checkbox-input" type="checkbox" name="Type-of-accommodation" value="hotel" checked>
   					  <span class="field-checkbox-text">Гостиница</span>
             </label>
             <label class="field-checkbox-item">
-  					  <input class="field-checkbox-input" type="checkbox" name="Type of accommodation" value="motel" checked>
+  					  <input class="field-checkbox-input" type="checkbox" name="Type-of-accommodation" value="motel" checked>
   					  <span class="field-checkbox-text">Мотель</span>
             </label>
             <label class="field-checkbox-item">
-  					  <input class="field-checkbox-input" type="checkbox" name="Type of accommodation" value="suite" checked>
+  					  <input class="field-checkbox-input" type="checkbox" name="Type-of-accommodation" value="suite" checked>
   					  <span class="field-checkbox-text">Апартаменты</span>
             </label>
   				</div>
   				<div class="price-in-day">
-  					<p class="price-in-day-text">Стоимость в сутки(Р):</p>
+  					<p class="price-in-day-title">Стоимость в сутки(Р):</p>
   					<span class="min">от O</span>
   					<span class="max">до 3000</span>
   					<input type="range" name="price-in-day" min="0" max="3000" step="50">
   				</div>
-  				<div class="button">
-  					<input type="submit" value="ПОКАЗАТЬ">
-  				</div>
+  				<button class="field-group-button" type="submit">Показать</button>
   			</form>
   		</section>
   		<section class="results">
-  			<b>Найдено: 3</b>
+  			<b class="results-sum">Найдено: 3</b>
   			<h3 class="results-title">Сортировка:</h3>
   			<ul class="results-sorting">
   				<li><a href="#">По цене</a></li>
@@ -85,8 +84,12 @@
   			<div class="hotel-about">
   				<h3 class="hotel-title">Amara resort & spa</h3>
   				<p class="hotel-price">Гостиница от 4000 р.</p>
-  				<a href="#">Подробнее</a>
-  				<a href="#">Забронировать</a>
+  				<a href="#">
+            <button class="hotel-button-detail" type="button">Подробнее</button>
+          </a>
+          <a href="#">
+            <button class="hotel-button-reserve" type="button">Забронировать</button>
+          </a>
   			</div>
   			<div class="hotel-grade">
   				<span class="hotel-stars"></span>
@@ -99,9 +102,13 @@
   			</div>
   			<div class="hotel-about">
   				<h3 class="hotel-title">Desert qual inn</h3>
-  				<p class="hotel-price">мотель от 3000 р.</p>
-  				<a href="#">Подробнее</a>
-  				<a href="#">Забронировать</a>
+  				<p class="hotel-price">Мотель от 3000 р.</p>
+          <a href="#">
+            <button class="hotel-button-detail" type="button">Подробнее</button>
+          </a>
+          <a href="#">
+            <button class="hotel-button-reserve" type="button">Забронировать</button>
+          </a>
   			</div>
   			<div class="hotel-grade">
   				<span class="hotel-stars"></span>
@@ -114,9 +121,13 @@
   			</div>
   			<div class="hotel-about">
   				<h3 class="hotel-title">Villas at poco diablo</h3>
-  				<p class="hotel-price">апартаменты от 2000 р.</p>
-  				<a href="#">Подробнее</a>
-  				<a href="#">Забронировать</a>
+  				<p class="hotel-price">Апартаменты от 2000 р.</p>
+          <a href="#">
+            <button class="hotel-button-detail" type="button">Подробнее</button>
+          </a>
+          <a href="#">
+            <button class="hotel-button-reserve" type="button">Забронировать</button>
+          </a>
   			</div>
   			<div class="hotel-grade">
   				<span class="hotel-stars"></span>
@@ -125,7 +136,7 @@
   	 	</article>
   	</main>
   	<footer class="main-footer">
-      <p>#Visitsedona</p>
+      <p class="hashtag">#Visitsedona</p>
       <div class="footer-social">
         <ul>
           <li>

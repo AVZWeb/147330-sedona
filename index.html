@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/normilize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   </head>
@@ -74,22 +75,22 @@
   			</div>
   		</section>
   		<section class="features">
-  			<div class="reason reason-secondary">
-  				<ul class="reason-items">
-  					<li class="reason-features">
-  						<h3 class="reason-title">Небольшая площадь</h3>
-  						<span class="reason-number">- &#8470; 3 -</span>
-  						<p class="reason-text">Все достопримечательности находятся очень близко</p>
+  			<div class="reason-secondary">
+  				<ul class="reason-secondary-items">
+  					<li class="reason-secondary-features">
+  						<h3 class="reason-secondary-title">Небольшая площадь</h3>
+  						<span class="reason-secondary-number">- &#8470; 3 -</span>
+  						<p class="reason-secondary-text">Все достопримечательности находятся очень близко</p>
   					</li>
-  					<li class="reason-features">
-  						<h3 class="reason-title">Красивая дорога</h3>
-  						<span class="reason-number">- &#8470; 4 -</span>
-  						<p class="reason-text">Ехать в седону из Лас-Вегаса совсем не скучно</p>
+  					<li class="reason-secondary-features">
+  						<h3 class="reason-secondary-title">Красивая дорога</h3>
+  						<span class="reason-secondary-number">- &#8470; 4 -</span>
+  						<p class="reason-secondary-text">Ехать в седону из Лас-Вегаса совсем не скучно</p>
   					</li>
-  					<li class="reason-features">
-  						<h3 class="reason-title">Мало туристов</h3>
-  						<span class="reason-number">- &#8470; 5 -</span>
-  						<p class="reason-text">Большенство едет в Гранд каньон и толпится там</p>
+  					<li class="reason-secondary-features">
+  						<h3 class="reason-secondary-title">Мало туристов</h3>
+  						<span class="reason-secondary-number">- &#8470; 5 -</span>
+  						<p class="reason-secondary-text">Большенство едет в Гранд каньон и толпится там</p>
   					</li>
   				</ul>
   			</div>
@@ -98,31 +99,41 @@
   			<p class="appointment-title">Заинтерисовались?</p>
   			<p class="appointment-text">Укажите предполагаемые даты поездки,<br>
   				   и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-  			<a href="#">Поиск гостиниц в Седоне</a>
-        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="get">
-          <div class="appointment-item">
-            <label for="date-enter">Дата заезда:</label>
-            <input type="text" name="date" id="date-enter" placeholder="24 апреля 2017">
-            <span class="appointment-calendar">
-            	<img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря">
-            </span>
+  			<a href="#">
+          <batton class="appointment-button" type="button">Поиск гостиниц в Седоне</button>
+        </a>
+        <form class="field-appointment-form" action="https://echo.htmlacademy.ru" method="get">
+          <div class="field-appointment">
+            <label class="field-appointment-item">
+              <span class="field-appointment-text">Дата заезда:</span>
+              <input class="field-appointment-input" type="text" name="date-enter" placeholder="24 апреля 2017">
+              <span class="field-appointment-calendar">
+            	  <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря">
+              </span>
+            </label>
           </div>
-          <div class="appointment-item">
-            <label for="date-out">Дата выезда:</label>
-            <input type="text" name="date" id="date-out" placeholder="4 июля 2017">
-            <span class="appointment-calendar">
-            	<img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря">
-            </span>
+          <div class="field-appointment">
+            <label class="field-appointment-item">
+              <span class="field-appointment-text">Дата выезда:</span>
+              <input class="field-appointment-input" type="text" name="date-out" placeholder="4 июля 2017">
+              <span class="field-appointment-calendar">
+            	  <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря">
+              </span>
+            </label>
           </div>
-          <div class="appointment-item">
-            <label for="grown">Взрослые:</label>
-            <input type="number" name="NumberOfadults" id="grown" placeholder="2">
+          <div class="field-appointment">
+            <label class="field-appointment-item">
+              <span class="field-appointment-text">Взрослые:</span>
+              <input class="field-appointment-input" type="number" name="NumberOfadults" placeholder="2">
+            </label>
           </div>
-          <div class="appointment-item">
-            <label for="children">Дети:</label>
-            <input type="number" name="NumberOfchildren" id="children" placeholder="0">
+          <div class="field-appointment">
+            <label class="field-appointment-item">
+              <span class="field-appointment-text">Дети:</span>
+              <input class="field-appointment-input" type="number" name="NumberOfchildren" placeholder="0">
+            </label>
           </div>
-          <button class="button" type="submit">Найти</button>
+          <button class="field-appointment-button" type="submit">Найти</button>
         </form>
   		</section>
       <div class="map-nav">
@@ -130,8 +141,8 @@
       </div>
   	</main>
     <footer class="main-footer">
-      <p>#Visitsedona</p>
-      <div class="social-item">
+      <p class="hashtag">#Visitsedona</p>
+      <div class="footer-social">
         <ul>
           <li>
           	<a class="social-link" href="#"><img src="img/twitter.svg" width="46" height="48" alt="пинтограмма твиттера">Твиттер</a>
