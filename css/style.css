@@ -129,7 +129,7 @@ a {
 .field-appointment-text {
 	font-weight: bold;
 	line-height: 26px;
-	color: #333333;
+	color: inherit;
 }
 
 .field-appointment-button {
@@ -161,6 +161,7 @@ a {
 .calendar-icon:active {
 	fill: #81b3d2;
 }
+
 /* Разметка футера */
 
 .hashtag {
@@ -195,6 +196,7 @@ a {
 .htmlacademy-logo:active {
 	fill: #bdbbbc;
 }
+
 /* Стили страницы Седона-каталог */
 
 .main-form  {
