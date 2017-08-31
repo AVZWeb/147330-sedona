@@ -237,27 +237,6 @@ li {
 	color: #ffffff;
 }
 
-.price-in-day-text {
-	font-weight: bold;
-	font-size: 16px;
-	color: #ffffff;
-}
-
-.price-in-day span {
-  color: #ffffff;
-}
-
-.field-group-button {
-	background-color: transparent;
-  color: #ffffff;
-}
-
-.field-group-button:hover,
-.field-group-button:focus {
-	background-color: #ffffff;
-	color: #333333;
-}
-
 .results-sum {
   font-weight: bold;
   font-size: 21px;
@@ -484,18 +463,133 @@ li {
 	justify-content: space-around;
 }
 
+/*Оформление фильтра стоимости*/
+
 .price-in-day {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 330px;
+	color: #ffffff;
+}
+
+.price-in-day-text {
+	font-weight: bold;
+	font-size: 16px;
+	color: #ffffff;
+	margin-bottom: 9px;
+}
+
+.price-controls {
+	position: relative;
+	height: 36px;
+	margin-bottom: 20px;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	font-size: 0;
+}
+
+.price-controls::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 2px;
+	height: 22px;
+	background:  #ffffff;
+	transform: translate(-50%, -50%);
+}
+.price-controls label {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 38px;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+	width: 90px;
+	padding-left: 65px;
+}
+
+.price-controls input {
+	width: 50px;
+	margin: 0;
+	color: inherit;
+	font: inherit;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+.range-controls {
+	position: relative;
+	margin-bottom: 32px;
+}
+
+.range-controls .scale {
+	height: 2px;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar{
+	width: 80%;
+	height: 2px;
+	background: #ffffff;
+}
+
+.range-toggle {
+	position: absolute;
+	top: -9px;
+	width: 4px;
+	height: 4px;
+	background: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+}
+
+.range-toggle-min {
+	left: 0;
+}
+
+.range-toggle-max {
+	left: 80%;
+}
+
+.field-group-button {
+	display: block;
+	margin: 0 auto;
+	padding: 6px 35px;
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	outline: none;
+	cursor: pointer;
+  color: #ffffff;
+}
+
+.field-group-button:hover,
+.field-group-button:focus {
+	background-color: #ffffff;
+	color: #333333;
+}
+/*.price-in-day {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 320px;
 	margin-left: 350px;
-}
+}*/
 
 .results {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	border-bottom: 1px solid #e5e5e5;
+	padding-left: 42px;
 	width: 1200px;
 	height: 87px;
 }
@@ -505,7 +599,7 @@ li {
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
-	margin-right: 500px;
+	margin-right: 400px;
 	width: 245px;
 }
 
@@ -513,23 +607,48 @@ li {
 	width: 34px;
 }
 
-.hotel1 {
+.hotel {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	border-bottom: 1px solid #e5e5e5;
+	padding-left: 72px;
 	width: 1200px;
-	height: 150px;
 }
 
 .hotel-about {
 	display: flex;
 	flex-direction: column;
 	padding: 30px 30px;
-	height: 90px;
-
 }
 
 .hotel-about a{
+	display: inline-block;
+	padding: 5px 17px;
+}
+
+.hotel-grade {
+	margin-left: 520px;
+}
+
+.hotel-title {
+	margin-top: -10px;
+}
+
+.hotel-price {
+	margin-top: -15px;
+}
+
+.hotel-stars {
 	display: block;
-	padding: 14px 17px;
+	margin-left: 22px;
+	margin-right: 5px;
+	margin-bottom: 48px;
+	width: 90px;
+	height: 20px;
+	background: url("../img/star-png.png") no-repeat;
+	background-size: 90px 18px;
+}
+
+.hotel-rating {
+	padding: 8px 16px;
 }
