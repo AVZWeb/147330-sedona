@@ -9,29 +9,16 @@
   <body>
     <header class="page-header">
       <nav class="main-menu">
-        <!--<div class="logo">
+        <div class="logo">
           <a href="index.html">
             <img src="img/logo.png" width="137" height="70" alt="Логотип сайта">
           </a>
-        </div>-->
+        </div>
         <ul class="main-nav">
-          <li>
-            <a href="#">Информация</a>
-          </li>
-          <li>
-            <a href="#">Фото и видео</a>
-          </li>
-          <li class="logo">
-            <a href="index.html">
-              <img src="img/logo.png" width="138" height="70" alt="Логотип сайта">
-            </a>
-          </li>
-          <li>
-            <a href="#">Карта штата</a>
-          </li>
-          <li class="active">
-            <a>Гостиницы</a>
-          </li>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li class="active"><a>Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -39,7 +26,7 @@
       <section class="main-form">
         <h1 class="visually-hidden">Каталог гостиниц</h1>
         <form class="field-group-form" action="https://echo.htmlacademy.ru" method="get">
-          <div class="field-group-infostructure">
+          <div class="field-group infostruction">
             <h2 class="field-group-title">Инфраструктура:</h2>
             <label class="field-checkbox-label">
               <input class="field-checkbox-input" type="checkbox" name="infrastructure" value="pool" checked>
@@ -54,7 +41,7 @@
               <span class="field-checkbox-text">Wi-fi</span>
             </label>
           </div>
-          <div class="field-group-suite">
+          <div class="field-group suite">
             <h2 class="field-group-title">Тип жилья:</h2>
             <label class="field-checkbox-label">
               <input class="field-checkbox-input" type="checkbox" name="Type-of-accommodation" value="hotel" checked>
@@ -104,9 +91,11 @@
         <div class="sort-arrow">
           <a href="#" class="up">
             <img src="img/icon-up-dir.svg" width="11" height="10" alt="up">
+            <span class="visually-hidden">Сортировка от большего к меньшему</span>
           </a>
           <a href="#" class="down">
             <img src="img/icon-down-dir.svg" width="11" height="10" alt="down">
+            <span class="visually-hidden">Сортировка от меньшего к большему</span>
           </a>
         </div>
       </section>
