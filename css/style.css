@@ -313,7 +313,7 @@ img {
 }
 
 .hotel-detail {
-	padding: 8px 17px;
+	padding: 3px 17px;
 	background-color: #81b3d2;
 	text-transform: inherit;
 	color: #ffffff;
@@ -330,7 +330,7 @@ img {
 }
 
 .hotel-reserve {
-	padding: 8px 17px;
+	padding: 3px 17px;
 	margin-left: 6px;
 	background-color: #766357;
 	text-transform: inherit;
@@ -590,22 +590,19 @@ input[type=number]::-webkit-outer-spin-button {
 	display: flex;
 	flex-direction: column;
 	margin-right: auto;
-	padding: 30px 30px;
-}
-
-.hotel-about a{
-	display: inline-block;
-	padding: 5px 17px;
+	margin-left: 30px;
+	margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .hotel-title {
-	margin-top: -10px;
+	margin-top: -3px;
 }
 
 .hotel-price {
 	display: flex;
 	justify-content: space-between;
-	font-weight: inherit;
+	font-weight: normal;
 	width: 180px;
 	margin-top: -15px;
 }
@@ -624,17 +621,35 @@ input[type=number]::-webkit-outer-spin-button {
 	font-weight: normal;
 }
 
-.hotel-stars {
+.hotel-stars-1{
 	display: inline-block;
-	margin-left: 22px;
-	margin-right: 5px;
+	margin-left: 49px;
 	margin-bottom: 48px;
 	height: 17px;
-	background: url("../img/star.svg") no-repeat;
+	width: 71px;
+	background: url("../img/star.svg") repeat;
+}
+
+.hotel-stars-2{
+	display: inline-block;
+	margin-left: 60px;
+	margin-bottom: 48px;
+	height: 17px;
+	width: 54px;
+	background: url("../img/star.svg") repeat;
+}
+
+.hotel-stars-3{
+	display: inline-block;
+	margin-left: 80px;
+	margin-bottom: 48px;
+	height: 17px;
+	width: 35px;
+	background: url("../img/star.svg") repeat;
 }
 
 .hotel-rating {
-	padding: 8px 16px;
+	padding: 3px 16px;
 }
 
 /*Оформление фильтра стоимости*/
