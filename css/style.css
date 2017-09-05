@@ -245,6 +245,7 @@ img {
 /* Стили страницы Седона-каталог */
 
 .main-form  {
+	width: 1200px;
 	background: #81b3d2 url("../img/background-foto.jpg") no-repeat;
 }
 
@@ -312,6 +313,7 @@ img {
 }
 
 .hotel-detail {
+	padding: 8px 17px;
 	background-color: #81b3d2;
 	text-transform: inherit;
 	color: #ffffff;
@@ -328,6 +330,8 @@ img {
 }
 
 .hotel-reserve {
+	padding: 8px 17px;
+	margin-left: 6px;
 	background-color: #766357;
 	text-transform: inherit;
 	color: #ffffff;
@@ -351,10 +355,11 @@ img {
 
 .main-nav {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
-	padding: 15px 72px;
+	padding: 15px 0px 15px 0px;
 	background-color: #ffffff;
 }
 
@@ -362,16 +367,23 @@ img {
 	margin-right: auto;
 }
 
+.main-nav li {
+	width: 20%;
+	text-align: center;
+}
+
 .main-menu {
 	position: relative;
-	margin: auto;
+	width: 1200px;
 }
 
 .logo {
 	display: inline-block;
 	position: absolute;
 	width: 137px;
-	margin-left: : auto;
+	left: 0;
+  right: 0;
+	margin: 0 auto;
 	cursor: pointer;
 }
 
@@ -519,6 +531,7 @@ input[type=number]::-webkit-outer-spin-button {
 	padding:0;
 	margin:0;
 }
+
 .field-group-form {
 	display: flex;
 	justify-content: space-around;
@@ -576,6 +589,7 @@ input[type=number]::-webkit-outer-spin-button {
 .hotel-about {
 	display: flex;
 	flex-direction: column;
+	margin-right: auto;
 	padding: 30px 30px;
 }
 
@@ -584,27 +598,39 @@ input[type=number]::-webkit-outer-spin-button {
 	padding: 5px 17px;
 }
 
-.hotel-grade {
-	margin-left: 520px;
-}
-
 .hotel-title {
 	margin-top: -10px;
 }
 
 .hotel-price {
+	display: flex;
+	justify-content: space-between;
+	font-weight: inherit;
+	width: 180px;
 	margin-top: -15px;
 }
 
+.hotel-button {
+	display: flex;
+	justify-content: space-between;
+	width: 258;
+}
+
+.hotel-grade {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-right: 73px;
+	font-weight: normal;
+}
+
 .hotel-stars {
-	display: block;
+	display: inline-block;
 	margin-left: 22px;
 	margin-right: 5px;
 	margin-bottom: 48px;
-	width: 90px;
-	height: 20px;
-	background: url("../img/star-png.png") no-repeat;
-	background-size: 90px 18px;
+	height: 17px;
+	background: url("../img/star.svg") no-repeat;
 }
 
 .hotel-rating {
@@ -616,8 +642,7 @@ input[type=number]::-webkit-outer-spin-button {
 .price-in-day {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	width: 330px;
+	width: 318px;
 	color: #ffffff;
 }
 
@@ -678,6 +703,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .range-controls .scale {
+	width: 318px;
 	height: 2px;
 	background: rgba(255, 255, 255, 0.3);
 }
@@ -715,6 +741,7 @@ input[type=number]::-webkit-outer-spin-button {
 	background-color: transparent;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
+	text-transform: inherit;
 	outline: none;
 	cursor: pointer;
 	color: #ffffff;
