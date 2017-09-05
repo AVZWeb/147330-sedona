@@ -1,16 +1,21 @@
-html,
+html {
+	padding: 0 40px;
+}
+
 body {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
 	margin: 0;
 	padding: 0;
-	padding-left: 40px;
-	width: 1200px;
+	margin: auto;
+	min-width: 768px;
+  max-width: 1200px;
 	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
 	background-color: #f2f2f2;
+	box-shadow: 0px 0px 15px 0px #333;
 }
 
 @font-face {
@@ -22,23 +27,16 @@ body {
 		url("../fonts/PT_Sans-Web-Regular.ttf");
 }
 
-.wrapper {
-	width: 1200px;
-	margin: 0 40px;
-	top: 0px;
-  left: 40px;
-  right: 40px;
-  bottom: 0;
-  box-shadow: 0px 0px 15px 0px #333;
-  pointer-events: none;
-}
-
 a {
 	text-decoration: none;
 }
 
 li {
 	 list-style-type: none;
+}
+
+img {
+	display: block;
 }
 
 .main-nav a{
@@ -176,6 +174,7 @@ li {
 }
 
 .calendar-icon {
+	position: absolute;
 	fill: #cdcdcd;
 }
 
@@ -189,10 +188,11 @@ li {
 
 /* Разметка футера */
 
-.hashtag {
+.hashtag a {
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 26px;
+	color:inherit;
 }
 
 .social-link {
@@ -211,6 +211,10 @@ li {
 	width: 150px;
 }
 
+.social-icon {
+	fill: #ffffff;
+}
+
 .social-link:hover {
 	background-color: #669ec0;
 }
@@ -223,6 +227,10 @@ li {
 
 .footer-copyright {
 	line-height: 26px;
+}
+
+.htmlacademy-logo {
+	fill: #231f20;
 }
 
 .htmlacademy-logo:hover,
@@ -253,7 +261,8 @@ li {
 .results-sum {
   font-weight: bold;
   font-size: 21px;
-  line-height: 26px;}
+  line-height: 26px;
+}
 
 .results-sorting {
 	font-size: 12px;
@@ -313,7 +322,7 @@ li {
 	background-color: #669ec0;
 }
 
-.hotel-detail:active{
+.hotel-detail:active {
 	background-color: #5496bd;
 	color: #88b6d1;
 }
@@ -340,19 +349,6 @@ li {
 
 /* Сеточные стили */
 
-.main-menu {
-	margin: 0;
-	padding: 0;
-}
-
-.logo {
-	display: inline-block;
-	position: absolute;
-	right: 600px;
-	left: 600px;
-	cursor: pointer;
-}
-
 .main-nav {
 	display: flex;
 	justify-content: space-around;
@@ -362,8 +358,21 @@ li {
 	background-color: #ffffff;
 }
 
-.main-nav li:nth-child(2){
-	padding-right: 388px;
+.main-nav li:nth-child(2) {
+	margin-right: auto;
+}
+
+.main-menu {
+	position: relative;
+	margin: auto;
+}
+
+.logo {
+	display: inline-block;
+	position: absolute;
+	width: 137px;
+	margin-left: : auto;
+	cursor: pointer;
 }
 
 .promo-block {
@@ -392,7 +401,9 @@ li {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 50px 60px;
+	padding-top: 50px;
+	padding-right: 60px;
+	padding-left: 60px;
 	text-align: center;
 }
 
@@ -414,6 +425,13 @@ li {
 	padding-bottom: 85px;
 }
 
+.offers-house-img {
+	margin-bottom: -2px;
+}
+
+.offers-box-img {
+	margin-bottom: -6px;
+}
 .reason-items {
 	display: flex;
 	justify-content: space-around;
@@ -455,20 +473,21 @@ li {
 }
 
 .field-appointment-input {
+	position: relative;
 	width: 346px;
-	padding: 6px 13px;
-	margin-left: 20px;
-}
+	padding: 6px 31px 6px 13px;
 
-.calendar{
-	background-image: url("../img/calendar.svg");
-	background-position: 340px center;
-  background-repeat: no-repeat;
 }
 
 .field-appointment-label {
 	display: inline-block;
 	width: 458px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 .appointment-button {
@@ -628,6 +647,7 @@ li {
 	background:  #ffffff;
 	transform: translate(-50%, -50%);
 }
+
 .price-controls label {
 	display: inline-block;
 	font-size: 14px;
@@ -662,7 +682,7 @@ li {
 	background: rgba(255, 255, 255, 0.3);
 }
 
-.range-controls .bar{
+.range-controls .bar {
 	width: 80%;
 	height: 2px;
 	background: #ffffff;
@@ -705,11 +725,3 @@ li {
 	background-color: #ffffff;
 	color: #333333;
 }
-
-/*.price-in-day {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 320px;
-	margin-left: 350px;
-}*/
