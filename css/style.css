@@ -347,6 +347,11 @@ img {
 	color: #706158;
 }
 
+.footer-copyright-by {
+	position: relative;
+	top: -5px;
+}
+
 .visually-hidden {
 	display: none;
 }
@@ -437,13 +442,18 @@ img {
 	padding-bottom: 85px;
 }
 
-.offers-house-img {
-	margin-bottom: -2px;
+.offers-food-img {
+	margin-top: 1px;
 }
 
 .offers-box-img {
-	margin-bottom: -6px;
+	margin-top: -4px;
 }
+
+.offers-title.correct {
+	margin-bottom: 17px;
+}
+
 .reason-items {
 	display: flex;
 	justify-content: space-around;
@@ -574,7 +584,32 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .sort-arrow {
-	width: 34px;
+	margin-right: 45px;
+}
+
+.sort-arrow-up {
+	margin-right: 8px;
+	fill: #cacaca;
+}
+
+.sort-arrow-down {
+	fill: #cacaca;
+}
+
+.sort-arrow-down.active-arrow {
+	fill: #81b3d2;
+}
+
+.sort-arrow-up:hover,
+.sort-arrow-up:focus,
+.sort-arrow-down:hover,
+.sort-arrow-down:focus {
+	fill: #231f20;
+}
+
+.sort-arrow-up:active,
+.sort-arrow-down:active {
+	fill: #81b3d2;
 }
 
 .hotel {
