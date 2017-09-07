@@ -91,11 +91,10 @@
         <h3 class="appointment-title">Заинтерисовались?</h3>
         <p class="appointment-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="appointment-button" type="button">Поиск гостиниц в Седоне</button>
-
         <form class="field-appointment-form">
           <div class="field-appointment-item">
-            <div><label for="date-in" class="date-in">Дата заезда:</label></div>
-            <input type="date" id="date-in" name="date-in" readonly>
+            <label for="date-in" class="date-in">Дата заезда:</label>
+            <input class="field-appointment-input" type="text" id="date-in" name="date-in" placeholder="4 июля 2017">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
               <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363
                 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363
@@ -116,9 +115,8 @@
             </svg>
           </div>
           <div class="field-appointment-item">
-
             <label for="date-out">Дата выезда:</label>
-            <input type="date" id="date-out" name="date-out" readonly>
+            <input class="field-appointment-input" type="text" id="date-out" name="date-out" placeholder="4 июля 2017">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
               <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363
                 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363
@@ -140,21 +138,20 @@
           </div>
           <div class="field-appointment-item">
             <div class="adult-count-wrapper">
-              <div><label for="adult-count">Взрослые:</label></div>
+              <label for="adult-count">Взрослые:</label>
               <button class="adult-count minus">-</button>
-              <input type="number" id="adult-count" name="adult-count" value="2" step="1" readonly>
+              <input class="field-appointment-input" type="number" id="adult-count" name="adult-count" value="2" step="1" readonly>
               <button class="plus">+</button>
             </div>
             <div class="adult-count-wrapper">
-              <div><label for="child-count">Дети:</label></div>
+              <label for="child-count">Дети:</label>
               <button class="child-count minus">-</button>
-              <input type="number" id="child-count" name="child-count" value="0" step="1" readonly>
+              <input class="field-appointment-input" type="number" id="child-count" name="child-count" value="0" step="1" readonly>
               <button class="plus">+</button>
             </div>
           </div>
           <button class="field-appointment-btn" type="submit">Найти</button>
         </form>
-
   		</section>
       <div class="map-nav">
       	<img src="img/map.jpg" width="1200" height="475" alt="Карта как добраться" >

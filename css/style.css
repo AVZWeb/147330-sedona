@@ -550,7 +550,6 @@ input[type=number]::-webkit-outer-spin-button {
   flex-wrap: wrap;
   position: absolute;
   left: calc(50% - 287px);
-
   text-align: left;
   font-weight: 700;
   width: 574px;
@@ -593,7 +592,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .child-count.minus,
-.field-appointment-item input[type="date"] {
+.field-appointment-item input[type="text"] {
   margin-left: auto;
 }
 
@@ -601,6 +600,16 @@ input[type=number]::-webkit-outer-spin-button {
 .minus {
 	font-size: 21px;
 	font-weight: bold;
+}
+
+.field-appointment-input {
+	color: #333333;	
+	text-transform: uppercase;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: 26px;
+	font-size: bold;
+
 }
 
 .field-appointment-item input:hover {
