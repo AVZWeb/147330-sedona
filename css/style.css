@@ -299,6 +299,10 @@ img {
 	color: #b2b2b2;
 }
 
+.results-sorting-item.dotted {
+	border-bottom: 1px dotted #b3d1e4;
+}
+
 .results-sorting-item:hover,
 .results-sorting-item:focus {
 	color: #81b3d2;
