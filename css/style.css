@@ -93,9 +93,11 @@ img {
 }
 
 .reason-text {
+	padding-top: 5px;
 	line-height: 26px;
 	color: #ffffff;
 }
+
 .reason-secondary {
 	background-color: #eeeeee;
 }
@@ -113,16 +115,23 @@ img {
 }
 
 .offers-title {
+	padding-top: 7px;
 	font-weight: bold;
 	font-size: 21px;
 }
 
+.offers-text {
+	margin-top: 5px;
+}
+
 .appointment-title {
+	margin-top: -1px;
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 30px;
 }
 
 .appointment-text {
+	margin-bottom: 40px;
 	line-height: 26px;
 	color: #808080;
 }
@@ -137,24 +146,6 @@ img {
 
 .field-appointment-input:focus {
 	background-color: #ffffff;
-}
-
-.appointment-button {
-	background-color: #766357;
-	font-weight: bold;
-	font-size: 21px;
-	line-height: 26px;
-	color: #ffffff;
-}
-
-.appointment-button:hover,
-.appointment-button:focus {
-	background-color: #604e43;
-}
-
-.appointment-button:active {
-	background-color: #503e33;
-	color: #857871;
 }
 
 .field-appointment-text {
@@ -202,6 +193,20 @@ img {
 	font-size: 21px;
 	line-height: 26px;
 	color:inherit;
+}
+
+.hashtag a:hover,
+.hashtag a:focus {
+	color: #81b3d2;
+}
+
+.hashtag a:active {
+	color: #c7c7c7;
+}
+
+
+.hashtag {
+	margin-left: 20px;
 }
 
 .social-link {
@@ -255,6 +260,7 @@ img {
 
 .main-form  {
 	width: 1200px;
+ 	margin-bottom: -17px;
 	background: #81b3d2 url("../img/background-foto.jpg") no-repeat;
 }
 
@@ -445,12 +451,16 @@ img {
 	background-color: #ffffff;
 }
 
+.promo-block-img {
+	margin-top: -55px;
+}
+
 .promo-title {
-	padding-top: 62px;
+	padding-top: 42px;
 }
 
 .promo-text {
-	padding-bottom: 60px;
+	padding-bottom: 35px;
 }
 
 .reason {
@@ -462,7 +472,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 50px;
+	padding-top: 25px;
 	padding-right: 60px;
 	padding-left: 60px;
 	text-align: center;
@@ -473,6 +483,7 @@ img {
 	justify-content: space-around;
 	margin: 0;
 	padding: 0;
+	margin-bottom: -20px;
 	width: 1200px;
 	background-color: #ffffff;
 }
@@ -511,11 +522,14 @@ img {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	padding-top: 50px;
-	padding-bottom: 64px;
+	padding-top: 25px;
+	padding-bottom: 44px;
 	color: inherit;
 }
 
+.reason-picture.secondary-img {
+	order: -1;
+}
 .appointment {
 	text-align: center;
 	padding-top: 58px;
@@ -529,12 +543,27 @@ img {
 .appointment-button {
 	width: 570px;
 	padding: 35px 0px;
-	font-size: 21px;
+	padding-bottom: 30px;
+	border: 0;
 	font-weight: bold;
+	letter-spacing: 0.6px;
+	font-size: 21px;
+	line-height: 26px;
+	background-color: #766357;
+	color: #ffffff;
 	font-family: inherit;
 	text-transform: uppercase;
 }
 
+.appointment-button:hover,
+.appointment-button:focus {
+	background-color: #604e43;
+}
+
+.appointment-button:active {
+	background-color: #503e33;
+	color: #857871;
+}
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -553,7 +582,7 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: left;
   font-weight: 700;
   width: 574px;
-  padding-top: 55px;
+  padding-top: 50px;
 	margin-right: 20px;
   background-color: white;
   box-shadow: 0 7px 15px rgba(0,1,1,0.15);
@@ -603,7 +632,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .field-appointment-input {
-	color: #333333;	
+	color: #333333;
 	text-transform: uppercase;
 	font-family: inherit;
 	font-size: inherit;
@@ -664,8 +693,8 @@ input[type=number]::-webkit-outer-spin-button {
 .field-appointment-btn {
   padding-left: 195px;
   padding-right: 195px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin-top: 24px;
   margin-bottom: 56px;
   text-transform: uppercase;
@@ -690,7 +719,7 @@ input[type=number]::-webkit-outer-spin-button {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding: 36px 0;
+	padding: 20px 0px;
 	width: 1200px;
 	background-color: #ffffff;
 }
@@ -705,13 +734,14 @@ input[type=number]::-webkit-outer-spin-button {
 .map-nav {
 	padding:0;
 	margin:0;
+ 	margin-top: -59px;
 }
 
 .field-group-form {
 	display: flex;
 	justify-content: space-around;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 11px;
+  padding-bottom: 48px;
 	width: 1200px;
 }
 
@@ -725,6 +755,7 @@ input[type=number]::-webkit-outer-spin-button {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	margin-left: -40px;
 }
 
 .results {
@@ -733,8 +764,8 @@ input[type=number]::-webkit-outer-spin-button {
 	align-items: center;
 	border-bottom: 1px solid #e5e5e5;
 	padding-left: 42px;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 23px;
+	padding-bottom: 23px;
 	width: 1158px;
 	background-color: #ffffff;
 }
@@ -857,6 +888,8 @@ input[type=number]::-webkit-outer-spin-button {
 .price-in-day {
 	display: flex;
 	flex-direction: column;
+	margin-top: 18px;
+	margin-left: 190px;
 	width: 318px;
 	color: #ffffff;
 }
