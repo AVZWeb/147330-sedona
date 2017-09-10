@@ -661,10 +661,15 @@ input::-webkit-inner-spin-button {
   display: inline-block;
   width: 38px;
   height: 38px;
-	padding-left: 11px;
-  box-sizing: border-box;
+	padding-left: 13px;
+	box-sizing: border-box;
   border: none;
   background-color: #f2f2f2;
+}
+
+.field-appointment-item input[type="text"] {
+	padding-right: 40px;
+	padding-left: 11px;
 }
 
 .child-count.minus,
@@ -680,6 +685,7 @@ input::-webkit-inner-spin-button {
 
 .field-appointment-input {
 	color: #333333;
+	font-size: 14px;
 	text-transform: uppercase;
 	font-family: inherit;
 	font-weight: bold;
@@ -707,18 +713,19 @@ input::-webkit-inner-spin-button {
 	position: absolute;
 	right: 57px;
 	padding: 8px;
+	fill: #a9a9a9;
 }
-
+/*
 .field-appointment-item svg path {
   fill: #a9a9a9;
 }
-
-.field-appointment-input:hover+svg,
-.field-appointment-input:focus+svg {
+*/
+.field-appointment-input+svg:hover,
+.field-appointment-input+svg:focus {
   fill: #333333;
 }
 
-.field-appointment-input:active+svg {
+.field-appointment-input+svg:active {
   fill: #81b3d2;
 }
 
