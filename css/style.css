@@ -447,6 +447,10 @@ img {
   opacity: 0.3;
 }
 
+.field-checkbox-input:focus + .checkbox-indicator {
+outline: 1px solid blue;
+}
+
 /* Сеточные стили */
 
 .main-nav {
@@ -705,16 +709,16 @@ input::-webkit-inner-spin-button {
 	padding: 8px;
 }
 
-.field-appointment-item svg path{
+.field-appointment-item svg path {
   fill: #a9a9a9;
 }
 
-.field-appointment-input+svg:hover ,
-.field-appointment-item svg:focus path {
+.field-appointment-input:hover+svg,
+.field-appointment-input:focus+svg {
   fill: #333333;
 }
 
-.field-appointment-item svg:active path {
+.field-appointment-input:active+svg {
   fill: #81b3d2;
 }
 
@@ -902,7 +906,7 @@ input::-webkit-inner-spin-button {
 	font-weight: normal;
 }
 
-.hotel-stars-1{
+.hotel-stars-1 {
 	display: inline-block;
 	margin-left: 28px;
 	margin-bottom: 48px;
@@ -911,7 +915,7 @@ input::-webkit-inner-spin-button {
 	background: url("../img/star.svg") repeat;
 }
 
-.hotel-stars-2{
+.hotel-stars-2 {
 	display: inline-block;
 	margin-left: 50px;
 	margin-bottom: 48px;
@@ -920,7 +924,7 @@ input::-webkit-inner-spin-button {
 	background: url("../img/star.svg") repeat;
 }
 
-.hotel-stars-3{
+.hotel-stars-3 {
 	display: inline-block;
 	margin-left: 73px;
 	margin-bottom: 48px;
