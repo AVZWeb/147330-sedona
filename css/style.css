@@ -692,6 +692,14 @@ input::-webkit-inner-spin-button {
 	        box-shadow: 0 7px 15px rgba(0,1,1,0.15);
 }
 
+.modal {
+	display: none;
+}
+
+.modal-show {
+	display: block;
+}
+
 .field-appointment-item {
 	display: -webkit-box;
 	display: -ms-flexbox;
